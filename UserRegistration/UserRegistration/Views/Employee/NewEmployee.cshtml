@@ -1,0 +1,63 @@
+﻿@model VMEmployee
+@{
+    ViewData["Title"] = "NewEmployee";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@section Body{ 
+    <div class="container" style="margin-left:20px">
+        <div class="row">
+            <div class="col-xs-4">
+                <form method="post" >
+                    <div class="form-group">
+                        <label class="control-label">Name</label>
+                        <input type="text" class="form-control" asp-for="employee.name">
+                        <span asp-validation-for="employee.name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Phone</label>
+                        <input type="text" class="form-control" asp-for="employee.phone">
+                        <span asp-validation-for="employee.phone"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" >Email</label>
+                        <input type="text" class="form-control" asp-for="employee.email">
+                        <span asp-validation-for="employee.email"></span>
+                        <input type="text"  style="display:none"asp-for="employee.id" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Gender</label>
+                        <select type="text" class="form-control"asp-for="employee.gender" >
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+
+                        </select>
+                        <span asp-validation-for="employee.gender"></span>
+                    </div>
+                   
+                  
+                    
+                    <div class="form-group">
+                        <label class="control-label">Department</label>
+                        <select type="text" class="form-control" asp-items='new SelectList(Model.lidept,"id","Name")' asp-for="employee.dept_id" ></select>
+                    </div>
+                    <div class="form-group">
+
+                        @if ((bool)ViewData["Edit"] != true)
+                        {
+
+                            <input type="submit" class="btn btn-primary" value="Save" asp-action="Insert">
+                        }
+                        else
+                        {
+                            <input type="submit" class="btn btn-primary" value="Update" asp-action="Update">
+
+                        }
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}

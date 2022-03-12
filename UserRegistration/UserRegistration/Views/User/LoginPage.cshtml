@@ -1,0 +1,61 @@
+﻿@model User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LoginPage</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <form method="post" style="margin-left:20px">
+        <div class="row">
+            <div class="col-xs-4">
+                <h4>Sign In</h4>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="form-group">
+
+                    <label>User Name</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="form-group">
+                <div class="col-xs-1">
+                    <label>Password</label>
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" asp-for="Password">
+                    <span asp-validation-for="Password"></span>
+
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="row">
+            @if (ViewData["false"] != null)
+            {
+                <div><span>@ViewData["false"]</span></div>
+            }
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Login" asp-action="Login">
+    </form>
+</body>
+</html>

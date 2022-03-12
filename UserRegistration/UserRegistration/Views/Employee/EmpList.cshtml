@@ -1,0 +1,34 @@
+﻿@model List<Employee>
+@{
+    ViewData["Title"] = "EmpList";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@section Body{ 
+    <div class="container">
+        
+        <table class="table table-hover" style="margin-top:100px">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department Name</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Employee item in Model)
+                {
+                <tr>
+                    <td>@item.name</td>
+                    <td>@item.email</td>
+                    <td>@item.Department.Name</td>
+                    <td><a asp-action="Edit" asp-route-id="@item.id">Edit</a>|<a asp-action="delete" asp-route-id="@item.id">Delete</a></td>
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

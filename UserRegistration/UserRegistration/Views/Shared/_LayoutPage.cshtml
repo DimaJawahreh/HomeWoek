@@ -1,0 +1,68 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_LayoutPage</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar-inverse">
+                <div class="navbar-brand">
+                    HR Sysytem
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-target="#menu1" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="menu1" class="navbar-collapse collapse">
+                   
+                        <ul class="nav navbar-nav">
+
+
+                            <li>
+                                <a asp-action="Index" asp-controller="Employee">New Employee</a>
+                            </li>
+                            <li>
+                                <a asp-action="EmpList" asp-controller="Employee"> Employee List</a>
+                            </li>
+                           
+                                <li>
+                                    <a asp-action="Index" asp-controller="Department">New Department</a>
+                                </li>
+                                <li>
+                                    <a asp-action="DeptList" asp-controller="Department">Department List</a>
+                                </li>
+                               
+                            
+                        </ul>
+
+                   
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                @RenderSection("Body")
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

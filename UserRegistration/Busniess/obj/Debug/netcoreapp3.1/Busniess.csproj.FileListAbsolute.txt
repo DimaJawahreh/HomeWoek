@@ -1,0 +1,16 @@
+C:\inetpub\wwwroot\UserRegistration\Busniess\bin\Debug\netcoreapp3.1\Busniess.deps.json
+C:\inetpub\wwwroot\UserRegistration\Busniess\bin\Debug\netcoreapp3.1\Busniess.runtimeconfig.json
+C:\inetpub\wwwroot\UserRegistration\Busniess\bin\Debug\netcoreapp3.1\Busniess.runtimeconfig.dev.json
+C:\inetpub\wwwroot\UserRegistration\Busniess\bin\Debug\netcoreapp3.1\Busniess.dll
+C:\inetpub\wwwroot\UserRegistration\Busniess\bin\Debug\netcoreapp3.1\Busniess.pdb
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.csproj.AssemblyReference.cache
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.GeneratedMSBuildEditorConfig.editorconfig
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.AssemblyInfoInputs.cache
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.AssemblyInfo.cs
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.dll
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.pdb
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.genruntimeconfig.cache
+C:\inetpub\wwwroot\UserRegistration\Busniess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\inetpub\wwwroot\UserRegistration\Busniess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\inetpub\wwwroot\UserRegistration\Busniess\obj\Debug\netcoreapp3.1\Busniess.csproj.CopyComplete
